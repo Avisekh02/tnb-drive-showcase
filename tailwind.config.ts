@@ -22,6 +22,15 @@ export default {
         primary: {
           DEFAULT: "hsl(var(--primary))",
           foreground: "hsl(var(--primary-foreground))",
+          light: "hsl(var(--primary-light))",
+          glow: "hsl(var(--primary-glow))",
+        },
+        tnb: {
+          blue: "hsl(var(--tnb-blue))",
+          "blue-light": "hsl(var(--tnb-blue-light))",
+          accent: "hsl(var(--tnb-accent))",
+          surface: "hsl(var(--tnb-surface))",
+          border: "hsl(var(--tnb-border))",
         },
         secondary: {
           DEFAULT: "hsl(var(--secondary))",
