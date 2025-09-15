@@ -1,0 +1,66 @@
+import { Notification } from '../types';
+import { mockUsers } from './users';
+
+export const mockNotifications: Notification[] = [
+  {
+    id: 'notif-1',
+    type: 'like',
+    message: 'liked your post about React component library',
+    user: mockUsers[1],
+    targetId: 'post-1',
+    isRead: false,
+    createdAt: '2024-01-10T15:30:00Z',
+  },
+  {
+    id: 'notif-2',
+    type: 'comment',
+    message: 'commented on your post: "Great insights! Really helpful."',
+    user: mockUsers[2],
+    targetId: 'post-1',
+    isRead: false,
+    createdAt: '2024-01-10T14:45:00Z',
+  },
+  {
+    id: 'notif-3',
+    type: 'follow',
+    message: 'started following you',
+    user: mockUsers[3],
+    isRead: false,
+    createdAt: '2024-01-10T12:20:00Z',
+  },
+  {
+    id: 'notif-4',
+    type: 'friend-request',
+    message: 'sent you a friend request',
+    user: mockUsers[4],
+    isRead: true,
+    createdAt: '2024-01-09T18:15:00Z',
+  },
+  {
+    id: 'notif-5',
+    type: 'mention',
+    message: 'mentioned you in a comment',
+    user: mockUsers[1],
+    targetId: 'comment-5',
+    isRead: true,
+    createdAt: '2024-01-09T16:30:00Z',
+  },
+  {
+    id: 'notif-6',
+    type: 'share',
+    message: 'shared your post',
+    user: mockUsers[2],
+    targetId: 'post-2',
+    isRead: true,
+    createdAt: '2024-01-09T11:45:00Z',
+  },
+  {
+    id: 'notif-7',
+    type: 'event',
+    message: 'invited you to DevConf 2024',
+    user: mockUsers[4],
+    targetId: 'event-1',
+    isRead: true,
+    createdAt: '2024-01-08T09:20:00Z',
+  },
+];

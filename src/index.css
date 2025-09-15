@@ -2,126 +2,163 @@
 @tailwind components;
 @tailwind utilities;
 
-/* TNB Drive Design System - Professional Cloud Storage Interface */
+/* DevConnect Design System - Modern Social Media Platform */
 
 @layer base {
   :root {
     --background: 0 0% 100%;
-    --foreground: 220 70% 15%;
+    --foreground: 210 20% 15%;
 
     --card: 0 0% 100%;
-    --card-foreground: 220 70% 15%;
+    --card-foreground: 210 20% 15%;
 
     --popover: 0 0% 100%;
-    --popover-foreground: 220 70% 15%;
+    --popover-foreground: 210 20% 15%;
 
-    /* TNB Drive Brand Colors */
-    --primary: 220 70% 20%;
+    /* DevConnect Brand Colors */
+    --primary: 220 85% 55%;
     --primary-foreground: 0 0% 100%;
-    --primary-light: 220 70% 45%;
-    --primary-glow: 220 70% 60%;
+    --primary-light: 220 85% 65%;
+    --primary-glow: 220 85% 75%;
 
-    --secondary: 220 15% 96%;
-    --secondary-foreground: 220 70% 20%;
+    --secondary: 210 20% 96%;
+    --secondary-foreground: 210 20% 15%;
 
-    --muted: 220 10% 95%;
-    --muted-foreground: 220 10% 45%;
+    --muted: 210 15% 95%;
+    --muted-foreground: 210 10% 45%;
 
-    --accent: 210 90% 50%;
+    --accent: 265 85% 58%;
     --accent-foreground: 0 0% 100%;
+
+    --success: 145 85% 45%;
+    --success-foreground: 0 0% 100%;
+
+    --warning: 35 85% 55%;
+    --warning-foreground: 0 0% 100%;
 
     --destructive: 0 85% 60%;
     --destructive-foreground: 0 0% 100%;
 
-    --border: 220 13% 91%;
-    --input: 220 13% 91%;
-    --ring: 220 70% 20%;
+    --border: 210 15% 91%;
+    --input: 210 15% 96%;
+    --ring: 220 85% 55%;
 
     --radius: 0.75rem;
 
-    /* TNB Drive Specific Colors */
-    --tnb-blue: 220 70% 20%;
-    --tnb-blue-light: 220 70% 45%;
-    --tnb-accent: 210 90% 50%;
-    --tnb-surface: 220 15% 98%;
-    --tnb-border: 220 13% 91%;
+    /* DevConnect Social Colors */
+    --social-facebook: 220 85% 55%;
+    --social-twitter: 200 100% 60%;
+    --social-instagram: 315 85% 65%;
+    --social-linkedin: 210 85% 50%;
+    --social-github: 210 15% 15%;
+    --social-youtube: 0 85% 55%;
+
+    /* Status Colors */
+    --status-online: 145 85% 45%;
+    --status-away: 35 85% 55%;
+    --status-busy: 0 85% 60%;
+    --status-offline: 210 10% 45%;
+
+    /* Reaction Colors */
+    --reaction-like: 220 85% 55%;
+    --reaction-love: 0 85% 60%;
+    --reaction-laugh: 35 85% 55%;
+    --reaction-wow: 265 85% 58%;
+    --reaction-sad: 210 85% 50%;
+    --reaction-angry: 15 85% 55%;
 
     /* Gradients */
-    --gradient-primary: linear-gradient(135deg, hsl(220, 70%, 20%), hsl(220, 70%, 35%));
-    --gradient-accent: linear-gradient(135deg, hsl(210, 90%, 50%), hsl(220, 70%, 45%));
-    --gradient-surface: linear-gradient(180deg, hsl(220, 15%, 99%), hsl(220, 15%, 96%));
+    --gradient-primary: linear-gradient(135deg, hsl(220, 85%, 55%), hsl(265, 85%, 58%));
+    --gradient-accent: linear-gradient(135deg, hsl(265, 85%, 58%), hsl(315, 85%, 65%));
+    --gradient-surface: linear-gradient(180deg, hsl(210, 20%, 99%), hsl(210, 15%, 96%));
+    --gradient-story: linear-gradient(45deg, hsl(315, 85%, 65%), hsl(220, 85%, 55%));
 
     /* Shadows */
-    --shadow-sm: 0 1px 3px 0 hsl(220, 70%, 20% / 0.1);
-    --shadow-md: 0 4px 6px -1px hsl(220, 70%, 20% / 0.1);
-    --shadow-lg: 0 10px 15px -3px hsl(220, 70%, 20% / 0.1);
-    --shadow-xl: 0 20px 25px -5px hsl(220, 70%, 20% / 0.1);
+    --shadow-sm: 0 1px 3px 0 hsl(210, 20%, 15% / 0.1);
+    --shadow-md: 0 4px 6px -1px hsl(210, 20%, 15% / 0.1);
+    --shadow-lg: 0 10px 15px -3px hsl(210, 20%, 15% / 0.1);
+    --shadow-xl: 0 20px 25px -5px hsl(210, 20%, 15% / 0.1);
+    --shadow-glow: 0 0 30px hsl(220, 85%, 55% / 0.3);
 
     /* Animations */
     --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
     --transition-bounce: all 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+    --transition-spring: all 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
 
-    --sidebar-background: 0 0% 98%;
-
-    --sidebar-foreground: 240 5.3% 26.1%;
-
-    --sidebar-primary: 240 5.9% 10%;
-
-    --sidebar-primary-foreground: 0 0% 98%;
-
-    --sidebar-accent: 240 4.8% 95.9%;
-
-    --sidebar-accent-foreground: 240 5.9% 10%;
-
-    --sidebar-border: 220 13% 91%;
-
-    --sidebar-ring: 217.2 91.2% 59.8%;
+    --sidebar-background: 0 0% 99%;
+    --sidebar-foreground: 210 20% 15%;
+    --sidebar-primary: 220 85% 55%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 210 20% 96%;
+    --sidebar-accent-foreground: 210 20% 15%;
+    --sidebar-border: 210 15% 91%;
+    --sidebar-ring: 220 85% 55%;
   }
 
   .dark {
-    --background: 220 70% 8%;
-    --foreground: 220 15% 95%;
+    --background: 210 25% 8%;
+    --foreground: 210 15% 95%;
 
-    --card: 220 70% 10%;
-    --card-foreground: 220 15% 95%;
+    --card: 210 25% 10%;
+    --card-foreground: 210 15% 95%;
 
-    --popover: 220 70% 10%;
-    --popover-foreground: 220 15% 95%;
+    --popover: 210 25% 10%;
+    --popover-foreground: 210 15% 95%;
 
-    --primary: 220 70% 60%;
-    --primary-foreground: 220 70% 8%;
-    --primary-light: 220 70% 70%;
-    --primary-glow: 220 70% 80%;
+    --primary: 220 85% 65%;
+    --primary-foreground: 210 25% 8%;
+    --primary-light: 220 85% 75%;
+    --primary-glow: 220 85% 85%;
 
-    --secondary: 220 20% 15%;
-    --secondary-foreground: 220 15% 95%;
+    --secondary: 210 25% 15%;
+    --secondary-foreground: 210 15% 95%;
 
-    --muted: 220 20% 12%;
-    --muted-foreground: 220 15% 65%;
+    --muted: 210 25% 12%;
+    --muted-foreground: 210 15% 65%;
 
-    --accent: 210 90% 60%;
-    --accent-foreground: 220 70% 8%;
+    --accent: 265 85% 68%;
+    --accent-foreground: 210 25% 8%;
 
-    --destructive: 0 85% 65%;
-    --destructive-foreground: 220 70% 8%;
+    --success: 145 85% 55%;
+    --success-foreground: 210 25% 8%;
 
-    --border: 220 20% 18%;
-    --input: 220 20% 18%;
-    --ring: 220 70% 60%;
+    --warning: 35 85% 65%;
+    --warning-foreground: 210 25% 8%;
 
-    --tnb-blue: 220 70% 60%;
-    --tnb-blue-light: 220 70% 70%;
-    --tnb-accent: 210 90% 60%;
-    --tnb-surface: 220 20% 12%;
-    --tnb-border: 220 20% 18%;
-    --sidebar-background: 240 5.9% 10%;
-    --sidebar-foreground: 240 4.8% 95.9%;
-    --sidebar-primary: 224.3 76.3% 48%;
-    --sidebar-primary-foreground: 0 0% 100%;
-    --sidebar-accent: 240 3.7% 15.9%;
-    --sidebar-accent-foreground: 240 4.8% 95.9%;
-    --sidebar-border: 240 3.7% 15.9%;
-    --sidebar-ring: 217.2 91.2% 59.8%;
+    --destructive: 0 85% 70%;
+    --destructive-foreground: 210 25% 8%;
+
+    --border: 210 25% 18%;
+    --input: 210 25% 15%;
+    --ring: 220 85% 65%;
+
+    --social-facebook: 220 85% 65%;
+    --social-twitter: 200 100% 70%;
+    --social-instagram: 315 85% 75%;
+    --social-linkedin: 210 85% 60%;
+    --social-github: 210 15% 85%;
+    --social-youtube: 0 85% 65%;
+
+    --status-online: 145 85% 55%;
+    --status-away: 35 85% 65%;
+    --status-busy: 0 85% 70%;
+    --status-offline: 210 15% 65%;
+
+    --reaction-like: 220 85% 65%;
+    --reaction-love: 0 85% 70%;
+    --reaction-laugh: 35 85% 65%;
+    --reaction-wow: 265 85% 68%;
+    --reaction-sad: 210 85% 60%;
+    --reaction-angry: 15 85% 65%;
+
+    --sidebar-background: 210 25% 10%;
+    --sidebar-foreground: 210 15% 95%;
+    --sidebar-primary: 220 85% 65%;
+    --sidebar-primary-foreground: 210 25% 8%;
+    --sidebar-accent: 210 25% 15%;
+    --sidebar-accent-foreground: 210 15% 95%;
+    --sidebar-border: 210 25% 18%;
+    --sidebar-ring: 220 85% 65%;
   }
 }
 
@@ -135,36 +172,86 @@
     font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', sans-serif;
   }
 
-  /* TNB Drive Utilities */
-  .tnb-gradient-primary {
+  /* DevConnect Utilities */
+  .dc-gradient-primary {
     background: var(--gradient-primary);
   }
 
-  .tnb-gradient-accent {
+  .dc-gradient-accent {
     background: var(--gradient-accent);
   }
 
-  .tnb-gradient-surface {
+  .dc-gradient-surface {
     background: var(--gradient-surface);
   }
 
-  .tnb-shadow-sm {
+  .dc-gradient-story {
+    background: var(--gradient-story);
+  }
+
+  .dc-shadow-sm {
     box-shadow: var(--shadow-sm);
   }
 
-  .tnb-shadow-md {
+  .dc-shadow-md {
     box-shadow: var(--shadow-md);
   }
 
-  .tnb-shadow-lg {
+  .dc-shadow-lg {
     box-shadow: var(--shadow-lg);
   }
 
-  .tnb-transition-smooth {
+  .dc-shadow-glow {
+    box-shadow: var(--shadow-glow);
+  }
+
+  .dc-transition-smooth {
     transition: var(--transition-smooth);
   }
 
-  .tnb-transition-bounce {
+  .dc-transition-bounce {
     transition: var(--transition-bounce);
+  }
+
+  .dc-transition-spring {
+    transition: var(--transition-spring);
+  }
+
+  /* Social Media Specific Utilities */
+  .reaction-animation {
+    @apply dc-transition-spring hover:scale-110 active:scale-95;
+  }
+
+  .story-ring {
+    background: var(--gradient-story);
+    border-radius: 50%;
+    padding: 2px;
+  }
+
+  .online-indicator {
+    @apply absolute bottom-0 right-0 w-3 h-3 rounded-full border-2 border-background;
+    background-color: hsl(var(--status-online));
+  }
+
+  .typing-indicator {
+    @apply animate-pulse;
+  }
+
+  /* Custom scrollbar */
+  .custom-scrollbar::-webkit-scrollbar {
+    width: 6px;
+  }
+
+  .custom-scrollbar::-webkit-scrollbar-track {
+    background: hsl(var(--muted));
+  }
+
+  .custom-scrollbar::-webkit-scrollbar-thumb {
+    background: hsl(var(--muted-foreground) / 0.3);
+    border-radius: 3px;
+  }
+
+  .custom-scrollbar::-webkit-scrollbar-thumb:hover {
+    background: hsl(var(--muted-foreground) / 0.5);
   }
 }
